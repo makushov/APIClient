@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   }
   s.source       = { git: 'https://github.com/rnkyr/APIClient.git', tag: s.version }
   s.frameworks   = 'Foundation'
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '15.0'
   s.default_subspec = 'Alamofire'
 
   s.subspec 'Core' do |ss|
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Alamofire' do |ss|
     ss.dependency 'APIClient/Core'
-    ss.dependency 'Alamofire', '5.2.1'
+    ss.dependency 'Alamofire', '5.6.4'
     ss.source_files = 'Source/Alamofire/*'
   end
 end
